@@ -5,7 +5,7 @@ const app = express();
 app.use(express.static(__dirname + '/static')); 
 
 app.get('/*', function (req, res) { 
-    res.sendFile(path.join(__dirname + '/static')); 
+    res.sendFile(path.join(__dirname + '/static/')); 
 }); 
 
 app.listen(process.env.PORT || 3300, () => {
