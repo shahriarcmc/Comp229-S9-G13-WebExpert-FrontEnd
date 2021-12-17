@@ -14,6 +14,9 @@ import { EditTitleComponent } from './surveys/edit/edit-title.component';
 import { EditQuestionComponent } from './surveys/edit/edit-question.component';
 import { DeleteComponent } from './surveys/delete/delete.component';
 import { MatRadioModule } from '@angular/material/radio';
+import { AboutComponent} from '../pages/about/about.component';
+import { ContactComponent } from '../pages/contact/contact.component';
+
 
 
 @NgModule({
@@ -22,9 +25,11 @@ import { MatRadioModule } from '@angular/material/radio';
         FormsModule,
         RouterModule,
         ReactiveFormsModule,
-        MatRadioModule
+                MatRadioModule
     ],
     declarations: [
+            AboutComponent,
+    ContactComponent,
         HomeComponent,
         BasePageComponent,
         ListComponent,
