@@ -8,6 +8,6 @@ app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname + '/static/')); 
 }); 
 
-app.listen(process.env.PORT || 3300, () => {
+app.listen(process.env.PORT || 8080, () => {
     console.log(`====> Angular app is running.`)
 })
